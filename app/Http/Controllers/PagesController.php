@@ -11,7 +11,7 @@ class PagesController extends Controller
         $page_title = 'Dashboard';
         $page_description = 'Some description for the page';
 
-        return view('pages.dashboard', compact('page_title', 'page_description'));
+        return view('login', compact('page_title', 'page_description'));
     }
 
     /**
