@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('login');
 
 
 // Demo routes
@@ -29,3 +30,7 @@ Route::get('/icons/svg', 'PagesController@svg');
 
 // Quick search dummy route to display html elements in search dropdown (header search)
 Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

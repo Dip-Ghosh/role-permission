@@ -29,6 +29,8 @@
 
 {{-- Nav --}}
 <div class="navi navi-spacer-x-0 pt-5">
+
+
     {{-- Item --}}
     <a href="#" class="navi-item px-8">
         <div class="navi-link">
@@ -63,6 +65,7 @@
             </div>
         </div>
     </a>
+
 
     {{-- Item --}}
     <a href="#"  class="navi-item px-8">

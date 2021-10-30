@@ -51,6 +51,31 @@
 		    <a href="#" class="navi-item">
 		        <div class="navi-link">
 		            <div class="symbol symbol-40 bg-light mr-3">
+
+		            </div>
+		            <div class="navi-text">
+		                <div class="font-weight-bold">
+                            <div class="symbol-label">
+                                {{ Metronic::getSVG("media/svg/icons/General/Notification2.svg", "svg-icon-md svg-icon-success") }}
+                            </div>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="display-none">
+                                @csrf
+                                     <button class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            Log out
+                                         </button>
+                                  </form>
+
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+
+
+		    <a href="#" class="navi-item">
+		        <div class="navi-link">
+		            <div class="symbol symbol-40 bg-light mr-3">
 		                <div class="symbol-label">
 							{{ Metronic::getSVG("media/svg/icons/General/Notification2.svg", "svg-icon-md svg-icon-success") }}
 						</div>
